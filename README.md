@@ -16,7 +16,7 @@ stored according to the AES69-2015 standard [http://www.aes.org/publications/sta
 
 <div align="center">
 <a href="https://ci.appveyor.com/project/Penguin_DOOM/libmysofa">
-<img alt="Travis CI Status" src="https://ci.appveyor.com/api/projects/status/165e5x35l6vincor?svg=true"/>
+<img alt="AppVeyor Status" src="https://ci.appveyor.com/api/projects/status/rbi7yep0bd85r87x?svg=true"/>
 </a>
 </div>
 
