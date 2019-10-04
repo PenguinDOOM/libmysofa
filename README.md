@@ -15,17 +15,8 @@ stored according to the AES69-2015 standard [http://www.aes.org/publications/sta
 ## Badges
 
 <div align="center">
-<a href="https://travis-ci.org/hoene/libmysofa">
-<img alt="Travis CI Status" src="https://travis-ci.org/hoene/libmysofa.svg?branch=master"/>
-</a>
-<a href="https://scan.coverity.com/projects/hoene-libmysofa">
-<img alt="Coverity Scan Build Status" src="https://scan.coverity.com/projects/13030/badge.svg"/>
-</a>
-<a href="https://ci.appveyor.com/project/hoene/libmysofa-s142k">
-<img alt="AppVeyor Status" src="https://ci.appveyor.com/api/projects/status/mk86lx4ux2jn9tpo/branch/master?svg=true"/>
-</a>
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GUN8R6NUQCS3C" >
-<img alt="Donate" src="https://symonics.com/Donate-PayPal-green.svg"/>
+<a href="https://ci.appveyor.com/project/Penguin_DOOM/libmysofa">
+<img alt="Travis CI Status" src="https://ci.appveyor.com/api/projects/status/165e5x35l6vincor?svg=true"/>
 </a>
 </div>
 
@@ -150,4 +141,3 @@ Libmysofa compiles for Linux operating systems, OSX and Windows. By default, eac
 ## Disclaimer
 
 The SOFA files are from https://www.sofaconventions.org/, Piotr Majdak <piotr@majdak.com>. The K-D tree algorithm is by John Tsiombikas <nuclear@member.fsf.org>. The resampler is by Jean-Marc Valin. The remaining source code is by Christian Hoene <christian.hoene@symonics.com>, <a href="https://symonics.com/">Symonics GmbH</a>, and available under BSD-3-Clause license. This work has been funded by German <a href="https://www.bmbf.de">Federal Ministry of Education and Research</a>, funding code 01IS14027A.
-
