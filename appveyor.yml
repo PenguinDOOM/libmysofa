@@ -1,10 +1,6 @@
 version: 1.0.{build}
 configuration: Release
-image:
-      - Visual Studio 2019
-environment:
-    matrix:
-      - ARCH: x64
+platform: x64
 install:
 - cmd: >-
     cp "%APPVEYOR_BUILD_FOLDER%\src\hrtf\mysofa_export.h.in" "%APPVEYOR_BUILD_FOLDER%\src\hrtf\mysofa_export.h"
