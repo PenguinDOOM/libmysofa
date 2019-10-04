@@ -1,6 +1,10 @@
 version: 1.0.{build}
 configuration: Release
-platform: x64
+image:
+      - Visual Studio 2019
+environment:
+    matrix:
+      - ARCH: x64
 install:
 - cmd: >-
     cp "%APPVEYOR_BUILD_FOLDER%\src\hrtf\mysofa_export.h.in" "%APPVEYOR_BUILD_FOLDER%\src\hrtf\mysofa_export.h"
@@ -11,6 +15,6 @@ nuget:
   project_feed: true
 build:
   project: windows/libmysofa.sln
-  verbosity: normal
+  verbosity: minimal
 artifacts:
 - path: windows\bin
