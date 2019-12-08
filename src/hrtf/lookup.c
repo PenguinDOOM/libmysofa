@@ -68,7 +68,7 @@ MYSOFA_EXPORT struct MYSOFA_LOOKUP* mysofa_lookup_init(struct MYSOFA_HRTF *hrtf)
 	/*
 	 * Allocate kd tree
 	 */
-	lookup->kdtree = kd_create(3);
+	lookup->kdtree = kd_create();
 	if (!lookup->kdtree) {
 		free(lookup);
 		return NULL;
@@ -108,7 +108,7 @@ MYSOFA_EXPORT int mysofa_lookup(struct MYSOFA_LOOKUP *lookup, float *coordinate)
 		coordinate[2] *= r;
 	}
 
-	success = kd_nearest_noalloc((struct kdtree *) lookup->kdtree, coordinate, &res);
+	success = kd_nearest((struct kdtree *) lookup->kdtree, coordinate, &res);
 	if (success != 0) {
 		return MYSOFA_INTERNAL_ERROR;
 	}
